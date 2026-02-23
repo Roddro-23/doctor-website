@@ -30,8 +30,7 @@ services:
     runtime: static
     rootDir: frontend
     staticPublishPath: .
-    plan: free
-    headers:
+        headers:
       - path: /*
         name: Cache-Control
         value: no-cache
