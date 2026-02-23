@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book an appointment at HealthCare Clinic — online booking, fast and easy.">
+    <title>Book Appointment | HealthCare Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+                <div class="brand-text">Health<span>Care</span></div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="appointment.html" class="nav-link active">Appointment</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="appointment.html" class="nav-link nav-cta">Book Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Appointment</span>
+            </div>
+            <h1>Book an Appointment</h1>
+            <p>Schedule your visit online — quick, simple, and absolutely free.</p>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="section appointment-section">
+        <div class="container">
+            <div class="appointment-grid">
+
+                <!-- Info Side -->
+                <div class="appointment-info fade-up">
+                    <h2>We're Here to Help You Feel Better</h2>
+                    <p>Fill out the form to book your appointment. Our team will confirm your booking promptly.</p>
+                    <div class="appt-features">
+                        <div class="appt-feature">
+                            <div class="icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <strong style="display:block;color:#e2e8f0;">Flexible Hours</strong>
+                                <span>Mon–Fri 9AM–6PM | Sat 10AM–2PM</span>
+                            </div>
+                        </div>
+                        <div class="appt-feature">
+                            <div class="icon"><i class="fas fa-user-md"></i></div>
+                            <div>
+                                <strong style="display:block;color:#e2e8f0;">Expert Doctor</strong>
+                                <span>Dr. Sarah Johnson — 15+ years experience</span>
+                            </div>
+                        </div>
+                        <div class="appt-feature">
+                            <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                            <div>
+                                <strong style="display:block;color:#e2e8f0;">Safe & Private</strong>
+                                <span>Your information is secure and confidential</span>
+                            </div>
+                        </div>
+                        <div class="appt-feature">
+                            <div class="icon"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <strong style="display:block;color:#e2e8f0;">Quick Confirmation</strong>
+                                <span>You'll receive confirmation within 2 hours</span>
+                            </div>
+                        </div>
+                        <div class="appt-feature">
+                            <div class="icon"><i class="fas fa-money-bill-wave"></i></div>
+                            <div>
+                                <strong style="display:block;color:#e2e8f0;">Consultation Fee</strong>
+                                <span>BDT 800 — pay at the clinic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Quick -->
+                    <div
+                        style="margin-top:40px;background:var(--glass);border:1px solid var(--glass-border);border-radius:var(--radius-md);padding:24px;">
+                        <p style="color:#94a3b8;margin-bottom:16px;font-size:.9rem;">Or call us directly:</p>
+                        <a href="tel:+8801234567890" style="color:#60a5fa;font-size:1.3rem;font-weight:700;">
+                            <i class="fas fa-phone"></i> +880 1234-567890
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form Side -->
+                <div class="fade-up" id="formWrapper">
+                    <div class="form-card">
+                        <h3><i class="fas fa-calendar-plus"
+                                style="color:var(--primary);margin-right:10px;"></i>Appointment Details</h3>
+                        <form id="appointmentForm" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="patientName">Full Name <span>*</span></label>
+                                    <input type="text" id="patientName" name="patientName" class="form-control"
+                                        placeholder="John Doe">
+                                    <p class="error-msg" id="patientNameError"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number <span>*</span></label>
+                                    <input type="tel" id="phone" name="phone" class="form-control"
+                                        placeholder="+880 1700-000000">
+                                    <p class="error-msg" id="phoneError"></p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="patientEmail">Email Address <span
+                                        style="color:var(--gray-500)">(Optional)</span></label>
+                                <input type="email" id="patientEmail" name="patientEmail" class="form-control"
+                                    placeholder="you@example.com">
+                                <p class="error-msg" id="patientEmailError"></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="appointmentDatetime">Preferred Date & Time <span>*</span></label>
+                                <input type="datetime-local" id="appointmentDatetime" name="appointmentDatetime"
+                                    class="form-control">
+                                <p class="error-msg" id="appointmentDatetimeError"></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="reason">Reason for Visit</label>
+                                <textarea id="reason" name="reason" class="form-control"
+                                    placeholder="Briefly describe your symptoms or reason for this appointment..."
+                                    rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="submitBtn"
+                                style="width:100%;justify-content:center;margin-top:8px;">
+                                <i class="fas fa-calendar-check"></i> Book Appointment
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Success Message (hidden by default) -->
+                <div class="form-success" id="formSuccess">
+                    <div class="success-icon"><i class="fas fa-check"></i></div>
+                    <h3>Appointment Booked!</h3>
+                    <p>Thank you! Your appointment request has been submitted. We'll confirm it within 2 hours.</p>
+                    <a href="index.html" class="btn btn-primary" style="margin-top:24px;">
+                        <i class="fas fa-home"></i> Back to Home
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-name">Health<span>Care</span> Clinic</div>
+                    <p>Providing expert healthcare since 2009.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a
+                            href="services.html">Services</a><a href="appointment.html">Appointment</a><a
+                            href="contact.html">Contact</a></div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item"><i class="fas fa-phone"></i> +880 1234-567890</div>
+                    <div class="footer-contact-item"><i class="fas fa-envelope"></i> info@healthcareclinic.com</div>
+                </div>
+                <div class="footer-col">
+                    <h4>Timing</h4>
+                    <div class="footer-contact-item"><i class="fas fa-clock"></i> Mon–Fri: 9AM–6PM</div>
+                    <div class="footer-contact-item"><i class="fas fa-clock"></i> Sat: 10AM–2PM</div>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 HealthCare Clinic. All rights reserved.</span></div>
+        </div>
+    </footer>
+    <button class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/main.js"></script>
+    <script src="js/appointment.js"></script>
+</body>
+
+</html>

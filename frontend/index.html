@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HealthCare Clinic — Expert medical care by Dr. Sarah Johnson. Book appointments online for cardiology, general medicine, dental, and more.">
+  <title>HealthCare Clinic | Expert Medical Care</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">
+      <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+      <div class="brand-text">Health<span>Care</span></div>
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html"      class="nav-link active">Home</a></li>
+      <li><a href="about.html"      class="nav-link">About</a></li>
+      <li><a href="services.html"   class="nav-link">Services</a></li>
+      <li><a href="appointment.html"class="nav-link">Appointment</a></li>
+      <li><a href="contact.html"    class="nav-link">Contact</a></li>
+      <li><a href="appointment.html"class="nav-link nav-cta">Book Now</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content fade-up">
+      <div class="hero-badge">
+        <span></span> Now Accepting New Patients
+      </div>
+      <h1>Your Health Is Our <em>Top Priority</em></h1>
+      <p>Expert medical care from Dr. Sarah Johnson — a board-certified cardiologist and general physician with 15+ years of experience.</p>
+      <div class="hero-actions">
+        <a href="appointment.html" class="btn btn-primary btn-lg">
+          <i class="fas fa-calendar-plus"></i> Book Appointment
+        </a>
+        <a href="about.html" class="btn btn-white btn-lg">
+          <i class="fas fa-user-md"></i> Meet the Doctor
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="num" data-count="5000" data-suffix="+">0+</span>
+          <span class="label">Happy Patients</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num" data-count="15" data-suffix="+">0+</span>
+          <span class="label">Years Experience</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num" data-count="8" data-suffix="+">0+</span>
+          <span class="label">Specializations</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image-wrapper fade-in">
+      <div class="hero-image-card">
+        <img src="https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg"
+             alt="Dr. Sarah Johnson" class="hero-img">
+        <div class="hero-float-card card-1">
+          <div class="icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="text">
+            <strong>100% Safe & Secure</strong>
+            <span>Certified Procedures</span>
+          </div>
+        </div>
+        <div class="hero-float-card card-2">
+          <div class="icon"><i class="fas fa-star"></i></div>
+          <div class="text">
+            <strong>4.9 / 5 Rating</strong>
+            <span>Patient Reviews</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#f3f4f6" d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ==================== SERVICES PREVIEW ==================== -->
+<section class="section services-section" id="services">
+  <div class="container">
+    <div class="section-title fade-up">
+      <span class="badge">Our Services</span>
+      <h2>Comprehensive Medical Services</h2>
+      <p>We provide a wide range of medical services to keep you and your family healthy.</p>
+    </div>
+    <div class="services-grid" id="servicesGrid">
+      <!-- Loaded from API or static fallback -->
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fas fa-heart"></i></div>
+        <h3>Cardiology</h3>
+        <p>Expert diagnosis and treatment for heart conditions including ECG, echocardiography, and cardiac care.</p>
+        <a href="services.html" style="color:var(--primary);font-weight:600;font-size:.9rem;margin-top:12px;display:inline-block;">Learn more →</a>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fas fa-stethoscope"></i></div>
+        <h3>General Medicine</h3>
+        <p>Comprehensive primary care for adults including check-ups, chronic disease management, and prevention.</p>
+        <a href="services.html" style="color:var(--primary);font-weight:600;font-size:.9rem;margin-top:12px;display:inline-block;">Learn more →</a>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fas fa-syringe"></i></div>
+        <h3>Surgery</h3>
+        <p>Skilled surgical procedures performed in a sterile environment with advanced post-operative care.</p>
+        <a href="services.html" style="color:var(--primary);font-weight:600;font-size:.9rem;margin-top:12px;display:inline-block;">Learn more →</a>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fas fa-tooth"></i></div>
+        <h3>Dental Care</h3>
+        <p>Complete oral health services including cleaning, fillings, extractions, and cosmetic dentistry.</p>
+        <a href="services.html" style="color:var(--primary);font-weight:600;font-size:.9rem;margin-top:12px;display:inline-block;">Learn more →</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px;" class="fade-up">
+      <a href="services.html" class="btn btn-outline">View All Services <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ABOUT PREVIEW ==================== -->
+<section class="section about-section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-wrapper fade-in">
+        <img src="https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg"
+             alt="Dr. Sarah Johnson" class="about-img">
+        <div class="about-badge-card">
+          <span class="num">15+</span>
+          <span class="lbl">Years of<br>Experience</span>
+        </div>
+      </div>
+      <div class="about-content fade-up">
+        <span class="badge">About Doctor</span>
+        <h2>Dr. Sarah Johnson</h2>
+        <p><strong>MBBS, MD (Cardiology), FCPS</strong> | Cardiology & General Medicine</p>
+        <p>Dr. Sarah Johnson is a board-certified cardiologist and general physician with over 15 years of clinical experience. She is dedicated to providing compassionate, evidence-based care tailored to each patient's unique needs.</p>
+        <div class="info-chips">
+          <div class="chip"><i class="fas fa-graduation-cap"></i> MBBS, MD, FCPS</div>
+          <div class="chip"><i class="fas fa-award"></i> Board Certified</div>
+          <div class="chip"><i class="fas fa-heart"></i> Cardiologist</div>
+          <div class="chip"><i class="fas fa-clock"></i> Mon–Sat</div>
+        </div>
+        <a href="about.html" class="btn btn-primary">
+          <i class="fas fa-user-md"></i> Full Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WHY CHOOSE US ==================== -->
+<section class="section" style="background:var(--gray-100);">
+  <div class="container">
+    <div class="section-title fade-up">
+      <span class="badge">Why Choose Us</span>
+      <h2>Trusted by Thousands of Patients</h2>
+      <p>We combine modern medicine with compassionate care.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:28px;">
+      <div class="service-card fade-up" style="text-align:center;">
+        <div class="service-icon" style="margin:0 auto 20px;"><i class="fas fa-user-md"></i></div>
+        <h3>Expert Doctors</h3>
+        <p>Highly qualified specialists with international training and certifications.</p>
+      </div>
+      <div class="service-card fade-up" style="text-align:center;">
+        <div class="service-icon" style="margin:0 auto 20px;"><i class="fas fa-clock"></i></div>
+        <h3>Flexible Hours</h3>
+        <p>We offer morning and evening slots to fit your busy schedule.</p>
+      </div>
+      <div class="service-card fade-up" style="text-align:center;">
+        <div class="service-icon" style="margin:0 auto 20px;"><i class="fas fa-shield-alt"></i></div>
+        <h3>Safe & Hygienic</h3>
+        <p>All procedures are conducted in a fully sanitized and sterile environment.</p>
+      </div>
+      <div class="service-card fade-up" style="text-align:center;">
+        <div class="service-icon" style="margin:0 auto 20px;"><i class="fas fa-calendar-check"></i></div>
+        <h3>Easy Booking</h3>
+        <p>Book your appointment online in just a few clicks — no waiting in line.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TESTIMONIALS ==================== -->
+<section class="section testimonials-section">
+  <div class="container">
+    <div class="section-title fade-up">
+      <span class="badge">Testimonials</span>
+      <h2>What Our Patients Say</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Dr. Johnson is absolutely fantastic! She took the time to explain everything and made me feel so comfortable. My heart condition is now well-managed thanks to her expertise."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">R</div>
+          <div class="reviewer-name">
+            <strong>Rahim Uddin</strong><span>Cardiac Patient</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Booking online was so easy, and the clinic is spotlessly clean. The doctor listened to all my concerns patiently. Highly recommend HealthCare Clinic!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">S</div>
+          <div class="reviewer-name">
+            <strong>Sultana Begum</strong><span>Regular Patient</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"I've been bringing my kids here for two years. Dr. Johnson is wonderful with children. The staff is professional and the service is always top-notch."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">K</div>
+          <div class="reviewer-name">
+            <strong>Karim Hossain</strong><span>Parent</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA SECTION ==================== -->
+<section class="section" style="background:linear-gradient(135deg,var(--primary),var(--primary-dark));text-align:center;padding:80px 0;">
+  <div class="container fade-up">
+    <h2 style="color:#fff;margin-bottom:16px;">Ready to Take Care of Your Health?</h2>
+    <p style="color:rgba(255,255,255,.8);margin-bottom:40px;font-size:1.1rem;">Book your appointment today — quick, easy, and completely online.</p>
+    <a href="appointment.html" class="btn btn-white btn-lg">
+      <i class="fas fa-calendar-plus"></i> Book Your Appointment
+    </a>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-name">Health<span>Care</span> Clinic</div>
+        <p>Providing expert, compassionate healthcare to our community since 2009. Your wellbeing is our mission.</p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Doctor</a>
+          <a href="services.html">Services</a>
+          <a href="appointment.html">Book Appointment</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <div class="footer-links">
+          <a href="services.html">Cardiology</a>
+          <a href="services.html">General Medicine</a>
+          <a href="services.html">Surgery</a>
+          <a href="services.html">Dental Care</a>
+          <a href="services.html">Pediatrics</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i> 123 Medical Road, Dhaka, Bangladesh</div>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i> +880 1234-567890</div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i> info@healthcareclinic.com</div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i> Mon–Fri: 9AM–6PM | Sat: 10AM–2PM</div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2026 HealthCare Clinic. All rights reserved.</span>
+      <span>Made with <i class="fas fa-heart" style="color:#ef4444"></i> for better health</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

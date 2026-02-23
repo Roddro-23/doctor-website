@@ -1,0 +1,41 @@
+# render.yaml
+# Defines both the backend API service and the frontend static site on Render.
+# See: https://render.com/docs/yaml-spec
+
+services:
+
+  # ==================== BACKEND (Spring Boot API) ====================
+  - type: web
+    name: doctor-website-api
+    runtime: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: DB_URL
+        sync: false         # Set this manually in Render Dashboard → DB connection string
+      - key: DB_USER
+        sync: false         # Set this manually in Render Dashboard
+      - key: DB_PASS
+        sync: false         # Set this manually in Render Dashboard
+      - key: ADMIN_PASSWORD
+        sync: false         # Set your admin password here
+    healthCheckPath: /api/services
+
+  # ==================== FRONTEND (Static Site) ====================
+  - type: web
+    name: doctor-website-frontend
+    runtime: static
+    rootDir: frontend
+    staticPublishPath: .
+    plan: free
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-cache
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

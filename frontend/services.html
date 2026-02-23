@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="HealthCare Clinic medical services — Cardiology, General Medicine, Surgery, Dental, Pediatrics and more.">
+    <title>Our Services | HealthCare Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+                <div class="brand-text">Health<span>Care</span></div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="appointment.html" class="nav-link">Appointment</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="appointment.html" class="nav-link nav-cta">Book Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Services</span></div>
+            <h1>Our Medical Services</h1>
+            <p>We offer a comprehensive range of medical services delivered with excellence and compassion.</p>
+        </div>
+    </section>
+
+    <!-- Loading state -->
+    <section class="section services-section">
+        <div class="container">
+            <div class="section-title fade-up">
+                <span class="badge">What We Offer</span>
+                <h2>Comprehensive Healthcare Solutions</h2>
+                <p>Our team of experts delivers world-class care across multiple specializations.</p>
+            </div>
+            <!-- Services loaded from API -->
+            <div class="services-grid" id="servicesGrid">
+                <div class="loading-spinner" style="grid-column:1/-1;">
+                    <div class="spinner"></div>
+                    <p>Loading services...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section" style="background:var(--white);">
+        <div class="container">
+            <div class="section-title fade-up">
+                <span class="badge">How It Works</span>
+                <h2>Simple 3-Step Process</h2>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px;position:relative;" class="fade-up">
+                <div style="text-align:center;padding:40px 24px;">
+                    <div
+                        style="width:72px;height:72px;background:var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:1.8rem;color:#fff;font-weight:800;">
+                        1</div>
+                    <h3>Book Online</h3>
+                    <p>Fill out our simple appointment form with your preferred date and reason for visit.</p>
+                </div>
+                <div style="text-align:center;padding:40px 24px;">
+                    <div
+                        style="width:72px;height:72px;background:var(--secondary);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:1.8rem;color:#fff;font-weight:800;">
+                        2</div>
+                    <h3>Confirmation</h3>
+                    <p>Receive a confirmation and reminders for your scheduled appointment.</p>
+                </div>
+                <div style="text-align:center;padding:40px 24px;">
+                    <div
+                        style="width:72px;height:72px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:1.8rem;color:#fff;font-weight:800;">
+                        3</div>
+                    <h3>Get Treatment</h3>
+                    <p>Visit the clinic and receive expert care from our experienced medical team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insurance / Tech Section -->
+    <section class="section"
+        style="background:linear-gradient(135deg,var(--primary),var(--primary-dark));text-align:center;padding:72px 0;">
+        <div class="container fade-up">
+            <h2 style="color:#fff;margin-bottom:16px;">Ready to Get Started?</h2>
+            <p style="color:rgba(255,255,255,.8);margin-bottom:36px;font-size:1.05rem;">Book your appointment today and
+                take the first step to better health.</p>
+            <a href="appointment.html" class="btn btn-white btn-lg"><i class="fas fa-calendar-plus"></i> Book an
+                Appointment</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-name">Health<span>Care</span> Clinic</div>
+                    <p>Providing expert healthcare since 2009.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a
+                            href="services.html">Services</a><a href="appointment.html">Appointment</a><a
+                            href="contact.html">Contact</a></div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <div class="footer-links" id="footerServicesLinks"><a href="#">Cardiology</a><a href="#">General
+                            Medicine</a><a href="#">Surgery</a><a href="#">Dental</a></div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item"><i class="fas fa-phone"></i> +880 1234-567890</div>
+                    <div class="footer-contact-item"><i class="fas fa-envelope"></i> info@healthcareclinic.com</div>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 HealthCare Clinic. All rights reserved.</span></div>
+        </div>
+    </footer>
+    <button class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Load services from API
+        async function loadServices() {
+            const grid = document.getElementById('servicesGrid');
+            try {
+                const res = await apiFetch(`${API_BASE_URL}/api/services`);
+                const services = res.data || [];
+                if (!services.length) throw new Error('No services found');
+
+                const iconMap = {
+                    'fa-heart': 'fas fa-heart', 'fa-stethoscope': 'fas fa-stethoscope',
+                    'fa-syringe': 'fas fa-syringe', 'fa-tooth': 'fas fa-tooth',
+                    'fa-baby': 'fas fa-baby', 'fa-bone': 'fas fa-bone',
+                    'fa-brain': 'fas fa-brain', 'fa-user-md': 'fas fa-user-md',
+                };
+
+                grid.innerHTML = services.map((s, i) => `
+      <div class="service-card fade-up" style="animation-delay:${i * 0.05}s">
+        <div class="service-icon">
+          <i class="${iconMap[s.iconClass] || 'fas fa-plus-circle'}"></i>
+        </div>
+        <h3>${s.name}</h3>
+        <p>${s.description}</p>
+        <a href="appointment.html" style="color:var(--primary);font-weight:600;font-size:.9rem;margin-top:16px;display:inline-flex;align-items:center;gap:8px;">
+          Book Now <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    `).join('');
+
+                // Re-trigger scroll animations
+                document.querySelectorAll('.fade-up').forEach(el => {
+                    if (!el.classList.contains('visible')) {
+                        const obs = new IntersectionObserver(([entry]) => {
+                            if (entry.isIntersecting) { el.classList.add('visible'); obs.disconnect(); }
+                        }, { threshold: 0.1 });
+                        obs.observe(el);
+                    }
+                });
+            } catch (err) {
+                // Fallback to static content
+                grid.innerHTML = `
+      <div class="service-card fade-up visible"><div class="service-icon"><i class="fas fa-heart"></i></div><h3>Cardiology</h3><p>Expert heart care including ECG and echocardiography.</p></div>
+      <div class="service-card fade-up visible"><div class="service-icon"><i class="fas fa-stethoscope"></i></div><h3>General Medicine</h3><p>Comprehensive primary care for adults of all ages.</p></div>
+      <div class="service-card fade-up visible"><div class="service-icon"><i class="fas fa-syringe"></i></div><h3>Surgery</h3><p>Skilled surgical procedures with advanced post-op care.</p></div>
+      <div class="service-card fade-up visible"><div class="service-icon"><i class="fas fa-tooth"></i></div><h3>Dental Care</h3><p>Complete oral health services for the whole family.</p></div>
+      <div class="service-card fade-up visible"><div class="service-icon"><i class="fas fa-baby"></i></div><h3>Pediatrics</h3><p>Specialized care for children including vaccinations.</p></div>
+      <div class="service-card fade-up visible"><div class="service-icon"><i class="fas fa-bone"></i></div><h3>Orthopedics</h3><p>Musculoskeletal treatment for fractures and joint pain.</p></div>
+      <div class="service-card fade-up visible"><div class="service-icon"><i class="fas fa-brain"></i></div><h3>Neurology</h3><p>Diagnosis and management of neurological conditions.</p></div>
+      <div class="service-card fade-up visible"><div class="service-icon"><i class="fas fa-user-md"></i></div><h3>Dermatology</h3><p>Skin care including acne, eczema, and cosmetic procedures.</p></div>
+    `;
+            }
+        }
+        document.addEventListener('DOMContentLoaded', loadServices);
+    </script>
+</body>
+
+</html>

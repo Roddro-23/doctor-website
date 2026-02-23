@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Meet Dr. Sarah Johnson — Board-certified cardiologist with 15+ years experience at HealthCare Clinic.">
+    <title>About Dr. Sarah Johnson | HealthCare Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .timeline {
+            position: relative;
+            padding-left: 32px;
+            margin-top: 24px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary-light);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 28px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -28px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary);
+            border: 2px solid white;
+            box-shadow: 0 0 0 3px var(--primary-light);
+        }
+
+        .timeline-item .year {
+            font-size: .8rem;
+            color: var(--primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .timeline-item h4 {
+            font-size: 1rem;
+            color: var(--dark);
+            margin-bottom: 4px;
+        }
+
+        .timeline-item p {
+            font-size: .875rem;
+            color: var(--gray-500);
+        }
+
+        .award-card {
+            display: flex;
+            gap: 16px;
+            padding: 20px;
+            background: var(--white);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--gray-300);
+            transition: var(--transition);
+        }
+
+        .award-card:hover {
+            border-color: var(--primary);
+            transform: translateX(4px);
+        }
+
+        .award-card .aw-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--primary-light);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .award-card strong {
+            display: block;
+            color: var(--dark);
+            font-size: .95rem;
+        }
+
+        .award-card span {
+            font-size: .8rem;
+            color: var(--gray-500);
+        }
+
+        .timing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .timing-item {
+            background: var(--gray-100);
+            border-radius: var(--radius-sm);
+            padding: 16px;
+        }
+
+        .timing-item .day {
+            font-size: .8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .timing-item .time {
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .timing-item.closed .time {
+            color: var(--danger);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+                <div class="brand-text">Health<span>Care</span></div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="appointment.html" class="nav-link">Appointment</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="appointment.html" class="nav-link nav-cta">Book Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>About</span></div>
+            <h1>About Dr. Sarah Johnson</h1>
+            <p>Board-certified Cardiologist & General Physician — dedicated to your health for over 15 years.</p>
+        </div>
+    </section>
+
+    <!-- About Doctor -->
+    <section class="section about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper fade-in">
+                    <img src="https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg"
+                        alt="Dr. Sarah Johnson" class="about-img">
+                    <div class="about-badge-card">
+                        <span class="num">15+</span>
+                        <span class="lbl">Years Experience</span>
+                    </div>
+                </div>
+                <div class="about-content fade-up">
+                    <span class="badge">Meet the Doctor</span>
+                    <h2>Dr. Sarah Johnson</h2>
+                    <p style="font-weight:600;color:var(--primary);margin-bottom:12px;">MBBS, MD (Cardiology), FCPS</p>
+                    <p>Dr. Sarah Johnson is a board-certified cardiologist and general physician who has dedicated over
+                        15 years to providing exceptional healthcare. She completed her medical education at Dhaka
+                        Medical College and her Cardiology fellowship at the National Institute of Cardiovascular
+                        Diseases (NICVD).</p>
+                    <p>Dr. Johnson believes in treating each patient as a whole person, not just a diagnosis. She
+                        combines the latest medical advancements with a warm, approachable manner to create a
+                        comfortable environment for all her patients.</p>
+
+                    <div class="about-meta">
+                        <div class="meta-item">
+                            <div class="meta-label">Specialization</div>
+                            <div class="meta-value">Cardiology & General Medicine</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-label">Experience</div>
+                            <div class="meta-value">15+ Years</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-label">Clinic Name</div>
+                            <div class="meta-value">HealthCare Clinic</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-label">Consultation Fee</div>
+                            <div class="meta-value">BDT 800</div>
+                        </div>
+                    </div>
+
+                    <div class="info-chips">
+                        <div class="chip"><i class="fas fa-heart"></i> Cardiology</div>
+                        <div class="chip"><i class="fas fa-stethoscope"></i> General Medicine</div>
+                        <div class="chip"><i class="fas fa-language"></i> English, Bangla</div>
+                        <div class="chip"><i class="fas fa-map-marker-alt"></i> Dhaka, BD</div>
+                    </div>
+
+                    <a href="appointment.html" class="btn btn-primary">
+                        <i class="fas fa-calendar-plus"></i> Book Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Clinic Timing -->
+    <section class="section" style="background:var(--gray-100);">
+        <div class="container">
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;" class="fade-up">
+
+                <!-- Education Timeline -->
+                <div>
+                    <h3 style="margin-bottom:24px;"><i class="fas fa-graduation-cap"
+                            style="color:var(--primary);margin-right:10px;"></i>Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="year">2005 – 2010</div>
+                            <h4>MBBS</h4>
+                            <p>Dhaka Medical College, University of Dhaka</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="year">2011 – 2014</div>
+                            <h4>MD — Cardiology</h4>
+                            <p>National Institute of Cardiovascular Diseases (NICVD)</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="year">2015</div>
+                            <h4>FCPS Fellowship</h4>
+                            <p>Bangladesh College of Physicians and Surgeons</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="year">2016</div>
+                            <h4>International Training</h4>
+                            <p>Advanced Cardiac Care — Singapore General Hospital</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Awards & Recognitions -->
+                <div>
+                    <h3 style="margin-bottom:24px;"><i class="fas fa-trophy"
+                            style="color:var(--primary);margin-right:10px;"></i>Awards</h3>
+                    <div style="display:flex;flex-direction:column;gap:16px;">
+                        <div class="award-card">
+                            <div class="aw-icon"><i class="fas fa-award"></i></div>
+                            <div>
+                                <strong>Best Cardiologist 2022</strong>
+                                <span>Bangladesh Medical Association</span>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="aw-icon"><i class="fas fa-star"></i></div>
+                            <div>
+                                <strong>Excellence in Patient Care</strong>
+                                <span>HealthCare Foundation, 2020</span>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="aw-icon"><i class="fas fa-medal"></i></div>
+                            <div>
+                                <strong>Top Doctor Award</strong>
+                                <span>Dhaka Medical Circle, 2019</span>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="aw-icon"><i class="fas fa-certificate"></i></div>
+                            <div>
+                                <strong>Research Excellence Award</strong>
+                                <span>Asian Cardiology Congress, 2018</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clinic Timing -->
+                <div>
+                    <h3 style="margin-bottom:24px;"><i class="fas fa-clock"
+                            style="color:var(--primary);margin-right:10px;"></i>Clinic Timing</h3>
+                    <div class="timing-grid">
+                        <div class="timing-item">
+                            <div class="day">Monday</div>
+                            <div class="time">9:00 AM – 6:00 PM</div>
+                        </div>
+                        <div class="timing-item">
+                            <div class="day">Tuesday</div>
+                            <div class="time">9:00 AM – 6:00 PM</div>
+                        </div>
+                        <div class="timing-item">
+                            <div class="day">Wednesday</div>
+                            <div class="time">9:00 AM – 6:00 PM</div>
+                        </div>
+                        <div class="timing-item">
+                            <div class="day">Thursday</div>
+                            <div class="time">9:00 AM – 6:00 PM</div>
+                        </div>
+                        <div class="timing-item">
+                            <div class="day">Friday</div>
+                            <div class="time">2:00 PM – 6:00 PM</div>
+                        </div>
+                        <div class="timing-item">
+                            <div class="day">Saturday</div>
+                            <div class="time">10:00 AM – 2:00 PM</div>
+                        </div>
+                        <div class="timing-item closed" style="grid-column:span 2;">
+                            <div class="day">Sunday</div>
+                            <div class="time">Closed</div>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top:24px;padding:20px;background:var(--primary-light);border-radius:var(--radius-md);">
+                        <p style="color:var(--primary);font-weight:600;margin:0;"><i class="fas fa-phone"
+                                style="margin-right:8px;"></i>Emergency: +880 1234-567890</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section"
+        style="background:linear-gradient(135deg,var(--dark),var(--dark2));text-align:center;padding:72px 0;">
+        <div class="container fade-up">
+            <h2 style="color:#fff;margin-bottom:16px;">Schedule Your Consultation Today</h2>
+            <p style="color:#94a3b8;margin-bottom:36px;">Take the first step toward better health — book online in
+                minutes.</p>
+            <a href="appointment.html" class="btn btn-primary btn-lg"><i class="fas fa-calendar-plus"></i> Book
+                Appointment</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-name">Health<span>Care</span> Clinic</div>
+                    <p>Providing expert, compassionate healthcare since 2009.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a
+                            href="services.html">Services</a><a href="appointment.html">Appointment</a><a
+                            href="contact.html">Contact</a></div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <div class="footer-links"><a href="services.html">Cardiology</a><a href="services.html">General
+                            Medicine</a><a href="services.html">Surgery</a><a href="services.html">Dental Care</a></div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i> 123 Medical Road, Dhaka</div>
+                    <div class="footer-contact-item"><i class="fas fa-phone"></i> +880 1234-567890</div>
+                    <div class="footer-contact-item"><i class="fas fa-envelope"></i> info@healthcareclinic.com</div>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 HealthCare Clinic. All rights reserved.</span></div>
+        </div>
+    </footer>
+    <button class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

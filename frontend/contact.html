@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact HealthCare Clinic — phone, email, address, and Google Map location.">
+    <title>Contact Us | HealthCare Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+                <div class="brand-text">Health<span>Care</span></div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="appointment.html" class="nav-link">Appointment</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="appointment.html" class="nav-link nav-cta">Book Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Contact</span></div>
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Reach us by phone, email, or visit us in person.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Contact Info -->
+                <div class="contact-info fade-up">
+                    <span class="section-title" style="text-align:left;margin-bottom:24px;">
+                        <span class="badge">Get In Touch</span>
+                    </span>
+                    <h2 style="margin-bottom:16px;">We're Always Here For You</h2>
+                    <p style="margin-bottom:40px;">Have questions or concerns? Our friendly team is available to help.
+                        Don't hesitate to reach out via any of the channels below.</p>
+
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="icon"><i class="fas fa-phone"></i></div>
+                            <div class="info">
+                                <div class="label">Phone</div>
+                                <strong>+880 1234-567890</strong>
+                                <span style="font-size:.8rem;color:var(--gray-500);">Mon–Sat, 9AM–6PM</span>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info">
+                                <div class="label">Email</div>
+                                <strong>info@healthcareclinic.com</strong>
+                                <span style="font-size:.8rem;color:var(--gray-500);">We reply within 24 hours</span>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info">
+                                <div class="label">Location</div>
+                                <strong>123 Medical Road, Dhaka 1000</strong>
+                                <span style="font-size:.8rem;color:var(--gray-500);">Bangladesh</span>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="icon"><i class="fas fa-clock"></i></div>
+                            <div class="info">
+                                <div class="label">Clinic Hours</div>
+                                <strong>Mon–Fri: 9:00 AM – 6:00 PM</strong>
+                                <span style="font-size:.8rem;color:var(--gray-500);">Sat: 10:00 AM – 2:00 PM | Sun:
+                                    Closed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Map Embed -->
+                    <div class="map-frame">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.2!2d90.3990!3d23.7275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sDhaka%20Medical%20College!5e0!3m2!1sen!2sbd!4v1"
+                            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="Clinic Location Map">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="fade-up">
+                    <div class="form-card">
+                        <h3><i class="fas fa-paper-plane" style="color:var(--primary);margin-right:10px;"></i>Send Us a
+                            Message</h3>
+                        <p style="color:var(--gray-500);font-size:.9rem;margin-bottom:32px;">Fill out the form below and
+                            we'll get back to you as soon as possible.</p>
+                        <form id="contactForm" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contactName">Your Name <span>*</span></label>
+                                    <input type="text" id="contactName" name="contactName" class="form-control"
+                                        placeholder="John Doe">
+                                    <p class="error-msg" id="contactNameError"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactPhone">Phone Number</label>
+                                    <input type="tel" id="contactPhone" name="contactPhone" class="form-control"
+                                        placeholder="+880 1700-000000">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address <span>*</span></label>
+                                <input type="email" id="contactEmail" name="contactEmail" class="form-control"
+                                    placeholder="you@example.com">
+                                <p class="error-msg" id="contactEmailError"></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">Your Message <span>*</span></label>
+                                <textarea id="contactMessage" name="contactMessage" class="form-control" rows="6"
+                                    placeholder="How can we help you? Please provide as much detail as possible..."></textarea>
+                                <p class="error-msg" id="contactMessageError"></p>
+                            </div>
+                            <button type="submit" id="contactSubmitBtn" class="btn btn-primary"
+                                style="width:100%;justify-content:center;margin-top:8px;">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Emergency Banner -->
+                    <div
+                        style="margin-top:24px;background:linear-gradient(135deg,#ef4444,#dc2626);border-radius:var(--radius-md);padding:24px;text-align:center;">
+                        <p style="color:#fff;font-weight:700;font-size:1.1rem;"><i class="fas fa-exclamation-triangle"
+                                style="margin-right:10px;"></i>Medical Emergency?</p>
+                        <p style="color:rgba(255,255,255,.85);margin:8px 0 16px;font-size:.9rem;">For life-threatening
+                            emergencies, call our emergency line immediately.</p>
+                        <a href="tel:+8801234567890" class="btn btn-white" style="font-size:.95rem;">
+                            <i class="fas fa-phone"></i> +880 1234-567890
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-name">Health<span>Care</span> Clinic</div>
+                    <p>Providing expert healthcare since 2009.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a
+                            href="services.html">Services</a><a href="appointment.html">Appointment</a><a
+                            href="contact.html">Contact</a></div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item"><i class="fas fa-phone"></i> +880 1234-567890</div>
+                    <div class="footer-contact-item"><i class="fas fa-envelope"></i> info@healthcareclinic.com</div>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <div class="footer-contact-item"><i class="fas fa-clock"></i> Mon–Fri: 9AM–6PM</div>
+                    <div class="footer-contact-item"><i class="fas fa-clock"></i> Sat: 10AM–2PM</div>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 HealthCare Clinic. All rights reserved.</span></div>
+        </div>
+    </footer>
+    <button class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
